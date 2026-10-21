@@ -9,6 +9,9 @@
     --bg-img-galeria-4: url("https://cdn.pixabay.com/photo/2020/10/02/21/06/dome-5622133_1280.jpg");
     --bg-img-galeria-5: url("https://cdn.pixabay.com/photo/2020/06/28/00/04/chicago-5347435_1280.jpg");
     --bg-url-portada: url("https://cdn.pixabay.com/photo/2020/02/09/13/08/banner-4833105_960_720.jpg");
+    --logo-url: url("../logoKF033.webp");
+    --logo-ratio: 248/165;
+    --marca-agua-h: 5rem;
 }
 
 main {
@@ -17,6 +20,25 @@ main {
 
 main > section > article {
     padding: 7.5vw;
+}
+
+.agua {
+    position: relative;
+    /* background-color: lime; */
+}
+
+&::before {
+    position: fixed;
+    content: "";
+    height: var(--marca-agua-h);
+    width: calc(var(--marca-agua-h) * var(--logo-ratio));
+    bottom: 2rem;
+    right: 1rem;
+    background-image: var(--logo-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
 }
 
 a {
