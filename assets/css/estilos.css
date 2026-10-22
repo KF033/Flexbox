@@ -272,12 +272,16 @@ ul.galeria {
     height: 25vw;
     background-color: steelblue;
     box-shadow: none;
+    opacity: 0.5;
     /* box-shadow: 1em 2em rgba(0, 0, 0, 0.2); */
     transition:
         background-color 0.2s ease,
+        width 2s ease,
         box-shadow 2s ease;
     &:hover {
+        width: 100%;
         background-color: orange;
+        opacity: 1;
         /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
         /* box-shadow: 1em 2em 1em rgba(0, 0, 0, 0.2); */
         box-shadow:
