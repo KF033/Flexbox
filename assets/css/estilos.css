@@ -1,7 +1,14 @@
 :root {
     /* Colores del sitio */
+    --color-1: steelblue;
+    --color-2: pink;
+    --color-3: violet;
+    --color-4: orange;
+    --color-texto: rgb(255, 0, 144);
+    --color-a: #666;
+    --bg-body: #aa3c39;
 
-    --color-a-: steelblue;
+    --bg-body: #fefefe;
     --color-a--hover: tomato;
     --bg-img-galeria-1: url("https://cdn.pixabay.com/photo/2017/11/11/21/55/freedom-2940655_1280.jpg");
     --bg-img-galeria-2: url("https://cdn.pixabay.com/photo/2016/11/13/12/52/kuala-lumpur-1820944_1280.jpg");
@@ -13,9 +20,57 @@
     --logo-ratio: 248/165;
     --marca-agua-h: 5rem;
 }
+/* Underline From Center */
+.kf-underline,
+.a {
+    .hvr-underline-from-center:before {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        :hover::before {
+            left: 0;
+            right: 0;
+        }
+    }
+}
+.pepe::before {
+    .hvr-underline-from-center:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: #2098d1;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+        left: 0;
+        right: 0;
+    }
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before¨ {
+    left: 0;
+    right: 0;
+}
 
 .hover-css {
-    with: 10rem;
+    width: 10rem;
     height: 7rem;
     background-color: lime;
     background-image: var(--bg-img-galeria-1);
@@ -29,6 +84,17 @@ main {
 
 main > section > article {
     padding: 7.5vw;
+}
+
+/* colores de los textos */
+body,
+p,
+li,
+span {
+    color: var(--color-texto);
+}
+h3 {
+    color: var(--color-3);
 }
 
 .agua {
@@ -51,7 +117,7 @@ main > section > article {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: var(--color-4);
 }
 
 /* Ejemplo de usos de la pseudoclase :not() */
@@ -70,7 +136,7 @@ ul.enlaces {
         & a {
             color: var(--color-a-);
             &:hover {
-                color: var(--color-a--hover);
+                color: var(--color-3);
             }
         }
     }
