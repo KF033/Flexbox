@@ -244,3 +244,24 @@ ul.galeria {
         }
     }
 }
+
+.kf-button-queries {
+    padding: 4em 10em;
+    border-radius: 10px;
+    background: var(--color-1);
+    color: #fff;
+    &::before {
+        content: "@media (max-width: 600px)";
+    }
+}
+
+/* de 600px de ancho del dispositivo */
+@media (min-width: 600px) {
+    .kf-button-querie {
+        background: orange;
+    }
+
+    &::before {
+        content: "@media (max-width: 600px)";
+    }
+}
