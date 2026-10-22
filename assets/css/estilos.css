@@ -23,20 +23,19 @@
 /* Underline From Center */
 .kf-underline,
 .a {
-    .hvr-underline-from-center:before {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        overflow: hidden;
-        :hover::before {
-            left: 0;
-            right: 0;
-        }
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    :hover::before {
+        left: 0;
+        right: 0;
     }
 }
+
 .pepe::before {
     .hvr-underline-from-center:before {
         content: "";
