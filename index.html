@@ -11,240 +11,67 @@
         <meta name="robots" content="noIndex, noFollow" />
         <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
         <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
-
+        <!-- Ruta al favicon -->
         <!-- Utilícese una hoja de estilos Normalize -->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
-
-        <!-- Hojas de estilos de terceros -->
-
-        <!-- Hover.css de ianlunn.github.io -->
-        <!-- <link rel="stylesheet" href="assets/css/hover.css" /> -->
-
-        <!-- Ruta a nuestras hojas de estilos -->
-
-        <link rel="stylesheet" href="assets/css/menu.css" />
-
-        <link rel="stylesheet" href="assets/css/visibilidad.css" />
-        <link rel="stylesheet" href="assets/css/customHover.css" />
+        <!-- hover.css de ianlunn de estilos -->
+        <link rel="stylesheet" href="../Flexbox/assets/css/hover.css" />
+        <!-- Ruta a las hojas de estilos -->
         <link rel="stylesheet" href="assets/css/estilos.css" />
-        <link rel="stylesheet" href="assets/css/transitions.css" />
-        <link rel="stylesheet" href="assets/css/carrousel.css" />
-
+        <!-- <link rel="stylesheet" href="assets/css/carrusel.css" /> -->
         <!-- Título de la pestaña del navegador -->
         <title>UF1303 | Elaboración de hojas de estilos</title>
     </head>
 
     <body>
         <header></header>
-
-        <nav class="principal" aria-label="Navegación principal">
-            <h2 class="pechado">Menú Principal</h2>
-            <input id="icon-menu" name="icon-menu" type="checkbox" />
-            <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar menú">Menú</label>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Temas</a>
-                    <ul>
-                        <li>
-                            <a href="textos.html">Textos</a>
-                        </li>
-                        <li>
-                            <a href="imagenes.html">Imagenes</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
+        <nav></nav>
         <main class="agua">
+            <!-- <a href="./assets/logoKF033.webp">Logo KF</a> -->
             <section>
-                <header class="img-before portada">
-                    <h2>Primeros pasos con Media Queries en CSS</h2>
+                <header class="img-befores portada">
+                    <h2>Imágenes en CSS</h2>
                 </header>
                 <article>
-                    <h3>Referencias teóricas</h3>
-                    <figure class="hover-css pechado"></figure>
-                    <p>Enlaces y documentos de interés:</p>
-                    <ul class="enlaces-pdf">
+                    <h3>Referencia teóricas</h3>
+
+                    <p>Enlaces y documentos de interés:<s></s></p>
+                    <ul class="enlaces">
+                        <link rel="stylesheet" href="https://ianlunn.github.io/Hover/css/hover.css" />
                         <li>
-                            <a href="assets/pdf/CSS_Guia_ref_rap.pdf" target="_blank" title="Abrir documento pdf en una pestaña nueva"
-                                >Guía CSS de referencia rápida&nbsp;
-                                <sup>(PDF)</sup>
-                            </a>
+                            <figure class="hover css hvr-curl-top-left"></figure>
+                            <a href="./assets/pdf/CSS_Guia_ref_rap.pdf" target="_blank" title="Abrir documento PDF en una pestaña nueva" class="hvr-buzz">Guia referencia rápida <sup>(PDF)</sup></a>
                         </li>
-                        <li>
-                            <a href="assets/pdf/CSS_Manual_rapido.pdf" target="_blank" title="Abrir documento pdf en una pestaña nueva"
-                                >Manual rápido de CSS&nbsp;
-                                <sup>(PDF)</sup>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="assets/pdf/CSS_posicionamiento_relativo_absoluto.pdf" target="_blank" title="Abrir documento pdf en una pestaña nueva"
-                                >Posicionamiento relativo y absoluto en CSS&nbsp;
-                                <sup>(PDF)</sup>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf" target="_blank" title="Abrir documento pdf en una pestaña nueva"
-                                >Manual de la UF1303 Creación de hojas de estilos&nbsp;
-                                <sup>(PDF)</sup>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://es.w3docs.com/learn-css/the-ultimate-guide-to-flexbox" target="_blank" title="Ver tutorial de la w3Schools"> La Guía Definitiva de Flexbox | w3Schools</a>
-                        </li>
+                        <li class="hvr-underline-guide-to-flexbox"><a href="./assets/pdf/CSS_Manual_rapido.pdf" target="_blank" class="hvr-curl-top-left" class="pepe">Manual rápido</a></li>
+                        <li><a href="./assets/pdf/CSS_posicionamiento_relativo_absoluto.pdf">Posicionamiento relativo absoluto</a></li>
+                        <li><a href="./assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf">UF1303 Elaboración de hojas de estilos</a></li>
+                        <li><a href="https://www.w3.org/Style/CSS20/history.html" target="_blank">Historia de CSS</a></li>
                     </ul>
                 </article>
-
-                <article class="wu-article-queries">
-                    <h3>Botón responsive</h3>
-                    <p>Cambiar el dispositivo en el Inspector Wen</p>
-                    <button class="wu-button-queries"></button>
-                </article>
-
+                <h2>Boton responsive</h2>
+                <p>cambia el dispositivo en el inspector web</p>
+                <button class="kf-button-queries"></button>
                 <article>
-                    <h3>Transiciones CSS3</h3>
-                    <figure class="wu-transicion-color"></figure>
+                    <h2>transiciones</h2>
+                    <figure class="kf-transiciones-color"></figure>
                 </article>
-
                 <article>
-                    <h3>Transform CSS3</h3>
-                    <p>La propiedad transform mueve, gira, escala e inclina elementos sin alterar el diseño de la página: el resto de elementos no se entera de que algo se ha movido. Por eso es la favorita para hacer animaciones fluidas.</p>
-                    <p><strong>Las cuatro funciones básicas</strong></p>
-                    <ul class="enlaces-pdf">
-                        <li><code>translate()</code>: Mover en los ejes X | y | z</li>
-                        <li><code>rotate()</code>: Girar</li>
-                        <li><code>translate()</code>: Escalar</li>
-                        <li><code>translate()</code>: Inclinar</li>
-                    </ul>
-                    <p>Pasa el ratón por cada ítem para ver el estilos transform</p>
-                    <p><code>transform: </code></p>
-                    <ul class="transformers">
+                    <h3>transformers</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem debitis modi nemo officiis esse! Vel maiores doloribus illum, numquam eos odit expedita. Possimus eos sunt error assumenda, odit itaque qui!</p>
+                    <ul class="demo">
                         <li>
-                            <span>translateX</span>
-                            <figure class="translateX">
-                                <figcaption>X</figcaption>
-                            </figure>
+                            <figure><span>x,y,z</span></figure>
                         </li>
                         <li>
-                            <span>translateY</span>
-                            <figure class="translateY">
-                                <figcaption>Y</figcaption>
-                            </figure>
+                            <figure><span>45º</span></figure>
                         </li>
                         <li>
-                            <span>translate</span>
-                            <figure class="translate">
-                                <figcaption>X, Y</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>rotate(45deg)</span>
-                            <figure class="rotate45">
-                                <figcaption>45º</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>rotate(-90deg)</span>
-                            <figure class="rotate-90">
-                                <figcaption>-90º</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>rotate(1turn)</span>
-                            <figure class="rotate360">
-                                <figcaption>1 vuelta</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>scaleX(1.5)</span>
-                            <figure class="scaleX">
-                                <figcaption>scaleX</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>scaleY(0.5)</span>
-                            <figure class="scaleY">
-                                <figcaption>escaleY</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>scale(1.2)</span>
-                            <figure class="scale">
-                                <figcaption>scale</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>skewX</span>
-                            <figure class="skewX">
-                                <figcaption>skewX (25deg)</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>skewY</span>
-                            <figure class="skewY">
-                                <figcaption>skewY (25deg)</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>skew</span>
-                            <figure class="skew">
-                                <figcaption>skew (20deg, 10deg)</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <div>rotate(45deg)</div>
-                            <span>transform-origin</span>
-                            <figure class="rotate45 origin-center">
-                                <figcaption>center</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <div>rotate(45deg)</div>
-                            <span>transform-origin</span>
-                            <figure class="rotate45 origin-top-left">
-                                <figcaption>top left</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <div>rotate(45deg)</div>
-                            <span>transform-origin</span>
-                            <figure class="rotate45 origin-bottom-right">
-                                <figcaption>bottom right</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>A: translate rotate</span>
-                            <figure class="translate-rotate">
-                                <figcaption>A</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>B: rotate translate</span>
-                            <figure class="rotate-translate">
-                                <figcaption>B</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <span>Combina 3</span>
-                            <figure class="combina3">
-                                <figcaption>Levanta!</figcaption>
-                            </figure>
+                            <figure><span>scale</span></figure>
                         </li>
                     </ul>
                 </article>
-
                 <article class="galeria-flex">
-                    <h3>Galería de imágenes</h3>
+                    <h2>Galería de imágenes</h2>
                     <p>Parrilla de imágenes con Flexbox</p>
 
                     <ul class="galeria">
@@ -277,38 +104,8 @@
                                 <figcaption>Foto 5</figcaption>
                             </figure>
                         </li>
-                        <li>
-                            <figure class="img-before diapositiva-1">
-                                <figcaption>Foto 1</figcaption>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class="img-before diapositiva-2">
-                                <figcaption>Foto 2</figcaption>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class="img-before diapositiva-3">
-                                <figcaption>Foto 3</figcaption>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class="img-before diapositiva-4">
-                                <figcaption>Foto 4</figcaption>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class="img-before diapositiva-5">
-                                <figcaption>Foto 5</figcaption>
-                            </figure>
-                        </li>
                     </ul>
                 </article>
-
                 <article class="carrousel-container">
                     <h2>Simple Carrousel Pure CSS3</h2>
                     <p>Galería de imágenes en animación infinita automática tipo Carrousel</p>
