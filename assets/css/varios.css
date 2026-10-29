@@ -1,0 +1,35 @@
+.agua {
+    position: relative;
+    /* background-color: lime; */
+
+    &::before {
+        position: fixed;
+        content: "";
+        height: var(--marca-agua-h);
+        width: calc(var(--marca-agua-h) * var(--logo-ratio));
+        bottom: 2rem;
+        right: 1rem;
+        background-image: var(--logo-url);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.2;
+    }
+}
+
+.hover-css {
+    width: 10rem;
+    height: 7rem;
+    background-color: lime;
+    background-image: var(--bg-img-galeria-1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
