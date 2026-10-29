@@ -21,16 +21,39 @@ figure {
     margin: 0;
 }
 
+html {
+    font-size: 16px;
+    & body {
+        line-height: 1.6;
+    }
+
+    p,
+    ul,
+    ol,
+    li,
+    a {
+        font-style: (1rem, 0.95rem + 0.25vw, 1.125rem);
+    }
+}
+h2 {
+    font-size: var();
+}
+
 h3 {
     font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
     font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
     font-size: clamp(1.5rem, 1.1rem + 2vw, 3rem);
     font-size: 3vw;
-    font-size: clamp(1.5rem, 1.2rem+1.5vw, 2.25rem);
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
 
     color: var(--color-4);
 }
 
+figcaption,
+small,
+footer ul li a {
+    font-size: var(--font-size-mini);
+}
 .agua {
     position: relative;
     /* background-color: lime; */
