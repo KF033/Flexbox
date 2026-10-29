@@ -1,9 +1,5 @@
 /* Galeria Flexbox */
 
-article.galeria-flex {
-    background-color: lime;
-}
-
 ul.galeria {
     & .diapositiva-1::before {
         background-image: var(--galeria-1--thumb);
