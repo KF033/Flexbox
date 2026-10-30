@@ -6,11 +6,16 @@
     background-color: steelblue;
     box-shadow: none;
     opacity: 0.5;
+    background-image: url("../img/brillante.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* box-shadow: 1em 2em rgba(0, 0, 0, 0.2); */
     transition:
         background-color 0.2s ease,
         width 2s ease,
         box-shadow 2s ease;
+
     &:hover {
         width: 100%;
         background-color: orange;

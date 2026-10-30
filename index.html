@@ -20,9 +20,11 @@
         <!-- <link rel="stylesheet" href="../Flexbox/assets/css/hover.css" /> -->
 
         <!-- Ruta a las hojas de estilos -->
+        <link rel="stylesheet" href="assets/css/visibility.css" />
         <link rel="stylesheet" href="assets/css/variables.css" />
         <link rel="stylesheet" href="assets/css/transforms.css" />
         <link rel="stylesheet" href="assets/css/imagenes.css" />
+        <link rel="stylesheet" href="assets/css/MenuIcons.css" />
         <!-- <link rel="stylesheet" href="assets/css/varios.css" /> -->
         <link rel="stylesheet" href="assets/css/carrusel.css" />
         <link rel="stylesheet" href="assets/css/estilos.css" />
@@ -33,7 +35,33 @@
 
     <body>
         <header></header>
-        <nav></nav>
+        <nav class="principal" aria-label="Navegación principal">
+            <h2 class="pechado">Menú Principal</h2>
+            <input id="icon-menu" name="icon-menu" type="checkbox" />
+            <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar menú">Menú</label>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Temas</a>
+                    <ul>
+                        <li>
+                            <a href="textos.html">Textos</a>
+                        </li>
+                        <li>
+                            <a href="imagenes.html">Imagenes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
         <main class="agua">
             <!-- <a href="./assets/logoKF033.webp">Logo KF</a> -->
             <section>
@@ -42,10 +70,6 @@
                 </header>
                 <article>
                     <h3>Referencia teóricas</h3>
-                    <h4>Esto es un h4</h4>
-                    <h5>Esto es un h5</h5>
-                    <h6>Esto es un h6</h6>
-
                     <p>Enlaces y documentos de interés:<s></s></p>
                     <ul class="enlaces">
                         <li>

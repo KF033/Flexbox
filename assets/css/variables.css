@@ -27,6 +27,12 @@
     --bg-body: #fefefe;
     --color-a--hover: tomato;
 
+    /*colores del nav.principal*/
+
+    --color-5: #e6d7c5;
+    --color-6: #000000;
+    --color-7: #0f1fb3;
+
     /*imagenes del sitio*/
     /*--bg-img-galeria-1: url("https://cdn.pixabay.com/photo/2017/11/11/21/55/freedom-2940655_1280.jpg");
     --bg-img-galeria-2: url("https://cdn.pixabay.com/photo/2016/11/13/12/52/kuala-lumpur-1820944_1280.jpg");
