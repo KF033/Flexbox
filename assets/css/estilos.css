@@ -1,4 +1,90 @@
 /* colores de los textos */
+
+/*
+-------------------------------------------
+        --- Cabecera del sitio  ---
+-------------------------------------------
+*/
+body{
+    & header{
+        padding-left: 4vw;
+    }
+}
+
+& nav.principal{
+    padding-right: 4vw;
+}
+
+& main> section> article{
+    padding: 5vw;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+}
+body {
+    position: relative;
+    & > header {
+        z-index: 3;
+    }
+
+    & > nav {
+        z-index: 2;
+    }
+}
+
+body > header,
+body > nav.principal {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+}
+
+body > header {
+    display: flex;
+    align-items: center;
+
+    /* To Do @media queries */
+    /*padding-left: 7.5vw;*/
+
+    & a {
+        & figure.logo {
+            background-image: url("../img/logoKF033.webp");
+            /* width: 4.20283rem; */
+            height: 3rem;
+            width: 3rem;
+            /* aspect-ratio: 242/160; */
+            margin: 0;
+            /* margin-left: 1em; */
+            /* margin-right: 1em; */
+
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-attachment: scroll;
+            background-origin: border-box;
+            filter: none;
+        }
+    }
+}
+
+/*Fin de cabecera del sitio*/
+
+
+body > nav {
+    left: 0;
+    width: 100%;
+    background-color: white;
+
+    /* To Do @media queries */
+    padding-right: 7.5vw;
+
+    & ul li a {
+        line-height: 3.5rem;
+    }
+}
+
+
+
 body,
 p,
 li,
@@ -14,7 +100,7 @@ main {
 }
 
 main > section > article {
-    padding: 7.5vw;
+    padding: 4vw;
 }
 
 figure {
@@ -178,3 +264,61 @@ header.portada {
         filter: brightness(1) blur(2px) grayscale(0.8);
     }
 }
+
+
+
+/*Maquetación*/
+
+body {
+    & > header {
+        padding-left: 4vw;
+    }
+
+    & nav.pricipal {
+        padding-right: 4vw;
+    }
+}
+
+main > section > article {
+    padding: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+@media (min-with: 700px) {
+    body{
+        & header{
+            padding-right: 7.5vw;
+        }
+
+        & main>section>article{
+            padding-left: 7.5vw; }
+
+        & nav.pricipal{
+             padding-right: 7.5vw;
+        }    
+           
+           }
+}
+
+
+@media (min-with: 1024px) {
+    body{
+
+        &> header{
+            padding-right: 10vw;
+        }
+        & main>section>article{
+            padding-left: 10vw; }
+
+
+        & nav.pricipal{
+             padding-right: 7.5vw;
+             padding-right: 10vw;
+        }    
+           
+           }
+}
+/* Fin de maquetación/*
+
+
