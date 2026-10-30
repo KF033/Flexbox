@@ -1,0 +1,26 @@
+@import "UFT-8";
+
+/*Resto*/
+
+/*@import url("https://fonts.google.com/specimen/Abel?preview.script=Latn");*/
+
+html {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*url("https://fonts.google.com/?preview.script=Latn&query=anton");*/
+
+/*Títulos*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
